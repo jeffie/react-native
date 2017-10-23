@@ -1,134 +1,57 @@
 {
-  "name": "react-native",
-  "version": "0.44.3",
-  "description": "A framework for building native apps using React",
-  "license": "BSD-3-Clause",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:facebook/react-native.git"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "jest": {
-    "automock": true,
-    "transform": {
-      ".*": "./jest/preprocessor.js"
-    },
-    "setupFiles": [
-      "./jest/setup.js"
-    ],
-    "timers": "fake",
-    "moduleNameMapper": {
-      "^React$": "<rootDir>/Libraries/react-native/React.js",
-      "^[./a-zA-Z0-9$_-]+\\.png$": "RelativeImageStub"
-    },
-    "testPathIgnorePatterns": [
-      "Libraries/Renderer",
-      "/node_modules/",
-      "/website/",
-      "local-cli/templates/"
-    ],
-    "haste": {
-      "defaultPlatform": "ios",
-      "providesModuleNodeModules": [
-        "react-native"
-      ],
-      "platforms": [
-        "ios",
-        "android"
-      ]
-    },
-    "modulePathIgnorePatterns": [
-      "Libraries/react-native/",
-      "/node_modules/(?!react|fbjs|react-native|react-transform-hmr|core-js|promise)/",
-      "node_modules/react/node_modules/fbjs/",
-      "node_modules/react/lib/ReactDOM.js",
-      "node_modules/fbjs/lib/Map.js",
-      "node_modules/fbjs/lib/Promise.js",
-      "node_modules/fbjs/lib/fetch.js",
-      "node_modules/fbjs/lib/ErrorUtils.js",
-      "node_modules/fbjs/lib/URI.js",
-      "node_modules/fbjs/lib/Deferred.js",
-      "node_modules/fbjs/lib/PromiseMap.js",
-      "node_modules/fbjs/lib/UserAgent.js",
-      "node_modules/fbjs/lib/areEqual.js",
-      "node_modules/fbjs/lib/base62.js",
-      "node_modules/fbjs/lib/crc32.js",
-      "node_modules/fbjs/lib/everyObject.js",
-      "node_modules/fbjs/lib/fetchWithRetries.js",
-      "node_modules/fbjs/lib/filterObject.js",
-      "node_modules/fbjs/lib/flattenArray.js",
-      "node_modules/fbjs/lib/forEachObject.js",
-      "node_modules/fbjs/lib/isEmpty.js",
-      "node_modules/fbjs/lib/nullthrows.js",
-      "node_modules/fbjs/lib/removeFromArray.js",
-      "node_modules/fbjs/lib/resolveImmediate.js",
-      "node_modules/fbjs/lib/someObject.js",
-      "node_modules/fbjs/lib/sprintf.js",
-      "node_modules/fbjs/lib/xhrSimpleDataSerializer.js",
-      "node_modules/jest-cli",
-      "node_modules/react/dist",
-      "node_modules/fbjs/.*/__mocks__/",
-      "node_modules/fbjs/node_modules/",
-      "<rootDir>/website/"
-    ],
-    "unmockedModulePathPatterns": [
-      "node_modules/react/",
-      "Libraries/Renderer",
-      "promise",
-      "source-map",
-      "fastpath",
-      "denodeify",
-      "fbjs",
-      "sinon"
+  "_args": [
+    [
+      {
+        "raw": "react-native@0.44.3",
+        "scope": null,
+        "escapedName": "react-native",
+        "name": "react-native",
+        "rawSpec": "0.44.3",
+        "spec": "0.44.3",
+        "type": "version"
+      },
+      "/Users/daijun/work/shangbin/client-app"
     ]
-  },
-  "main": "Libraries/react-native/react-native-implementation.js",
-  "files": [
-    ".flowconfig",
-    "android",
-    "cli.js",
-    "flow",
-    "init.sh",
-    "ios-cc.sh",
-    "ios-install-third-party.sh",
-    "jest-preset.json",
-    "jest",
-    "lib",
-    "setupBabel.js",
-    "Libraries",
-    "LICENSE",
-    "local-cli",
-    "packager",
-    "PATENTS",
-    "react.gradle",
-    "React.podspec",
-    "React",
-    "ReactAndroid",
-    "ReactCommon",
-    "README.md"
   ],
-  "scripts": {
-    "test": "jest",
-    "flow": "flow",
-    "lint": "eslint Examples/ Libraries/",
-    "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --",
-    "test-android-setup": "docker pull containership/android-base:latest",
-    "test-android-build": "docker build -t react/android -f ContainerShip/Dockerfile.android .",
-    "test-android-run-instrumentation": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-instrumentation-tests.sh",
-    "test-android-run-unit": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-unit-tests.sh",
-    "test-android-run-e2e": "docker run -it react/android bash ContainerShip/scripts/run-ci-e2e-tests.sh --android --js",
-    "test-android-all": "npm run test-android-build && npm run test-android-run-unit && npm run test-android-run-instrumentation && npm run test-android-run-e2e",
-    "test-android-instrumentation": "npm run test-android-build && npm run test-android-run-instrumentation",
-    "test-android-unit": "npm run test-android-build && npm run test-android-run-unit",
-    "test-android-e2e": "npm run test-android-build && npm run test-android-run-e2e"
+  "_cnpm_publish_time": 1496743556199,
+  "_from": "react-native@0.44.3",
+  "_hasShrinkwrap": false,
+  "_id": "react-native@0.44.3",
+  "_inCache": true,
+  "_location": "/react-native",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-0.44.3.tgz_1496743553395_0.25136473402380943"
   },
+  "_npmUser": {
+    "name": "bestander",
+    "email": "bestander@gmail.com"
+  },
+  "_npmVersion": "3.8.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native@0.44.3",
+    "scope": null,
+    "escapedName": "react-native",
+    "name": "react-native",
+    "rawSpec": "0.44.3",
+    "spec": "0.44.3",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/react-native/download/react-native-0.44.3.tgz",
+  "_shasum": "04550e1cdfc619a712f3f5969d68cd7c2dc4c073",
+  "_shrinkwrap": null,
+  "_spec": "react-native@0.44.3",
+  "_where": "/Users/daijun/work/shangbin/client-app",
   "bin": {
     "react-native": "local-cli/wrong-react-native.js"
   },
-  "peerDependencies": {
-    "react": "16.0.0-alpha.6"
+  "bugs": {
+    "url": "https://github.com/facebook/react-native/issues"
   },
   "dependencies": {
     "absolute-path": "^0.0.0",
@@ -213,6 +136,7 @@
     "xpipe": "^1.0.5",
     "yargs": "^6.4.0"
   },
+  "description": "A framework for building native apps using React",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.8.1",
@@ -229,5 +153,165 @@
     "react-test-renderer": "16.0.0-alpha.6",
     "shelljs": "0.6.0",
     "sinon": "^2.0.0-pre.2"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "04550e1cdfc619a712f3f5969d68cd7c2dc4c073",
+    "size": 9491173,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/react-native/download/react-native-0.44.3.tgz"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    ".flowconfig",
+    "android",
+    "cli.js",
+    "flow",
+    "init.sh",
+    "ios-cc.sh",
+    "ios-install-third-party.sh",
+    "jest-preset.json",
+    "jest",
+    "lib",
+    "setupBabel.js",
+    "Libraries",
+    "LICENSE",
+    "local-cli",
+    "packager",
+    "PATENTS",
+    "react.gradle",
+    "React.podspec",
+    "React",
+    "ReactAndroid",
+    "ReactCommon",
+    "README.md"
+  ],
+  "homepage": "https://github.com/facebook/react-native#readme",
+  "jest": {
+    "automock": true,
+    "transform": {
+      ".*": "./jest/preprocessor.js"
+    },
+    "setupFiles": [
+      "./jest/setup.js"
+    ],
+    "timers": "fake",
+    "moduleNameMapper": {
+      "^React$": "<rootDir>/Libraries/react-native/React.js",
+      "^[./a-zA-Z0-9$_-]+\\.png$": "RelativeImageStub"
+    },
+    "testPathIgnorePatterns": [
+      "Libraries/Renderer",
+      "/node_modules/",
+      "/website/",
+      "local-cli/templates/"
+    ],
+    "haste": {
+      "defaultPlatform": "ios",
+      "providesModuleNodeModules": [
+        "react-native"
+      ],
+      "platforms": [
+        "ios",
+        "android"
+      ]
+    },
+    "modulePathIgnorePatterns": [
+      "Libraries/react-native/",
+      "/node_modules/(?!react|fbjs|react-native|react-transform-hmr|core-js|promise)/",
+      "node_modules/react/node_modules/fbjs/",
+      "node_modules/react/lib/ReactDOM.js",
+      "node_modules/fbjs/lib/Map.js",
+      "node_modules/fbjs/lib/Promise.js",
+      "node_modules/fbjs/lib/fetch.js",
+      "node_modules/fbjs/lib/ErrorUtils.js",
+      "node_modules/fbjs/lib/URI.js",
+      "node_modules/fbjs/lib/Deferred.js",
+      "node_modules/fbjs/lib/PromiseMap.js",
+      "node_modules/fbjs/lib/UserAgent.js",
+      "node_modules/fbjs/lib/areEqual.js",
+      "node_modules/fbjs/lib/base62.js",
+      "node_modules/fbjs/lib/crc32.js",
+      "node_modules/fbjs/lib/everyObject.js",
+      "node_modules/fbjs/lib/fetchWithRetries.js",
+      "node_modules/fbjs/lib/filterObject.js",
+      "node_modules/fbjs/lib/flattenArray.js",
+      "node_modules/fbjs/lib/forEachObject.js",
+      "node_modules/fbjs/lib/isEmpty.js",
+      "node_modules/fbjs/lib/nullthrows.js",
+      "node_modules/fbjs/lib/removeFromArray.js",
+      "node_modules/fbjs/lib/resolveImmediate.js",
+      "node_modules/fbjs/lib/someObject.js",
+      "node_modules/fbjs/lib/sprintf.js",
+      "node_modules/fbjs/lib/xhrSimpleDataSerializer.js",
+      "node_modules/jest-cli",
+      "node_modules/react/dist",
+      "node_modules/fbjs/.*/__mocks__/",
+      "node_modules/fbjs/node_modules/",
+      "<rootDir>/website/"
+    ],
+    "unmockedModulePathPatterns": [
+      "node_modules/react/",
+      "Libraries/Renderer",
+      "promise",
+      "source-map",
+      "fastpath",
+      "denodeify",
+      "fbjs",
+      "sinon"
+    ]
+  },
+  "license": "BSD-3-Clause",
+  "main": "Libraries/react-native/react-native-implementation.js",
+  "maintainers": [
+    {
+      "name": "bestander",
+      "email": "bestander@gmail.com"
+    },
+    {
+      "name": "fb",
+      "email": "opensource+npm@fb.com"
+    },
+    {
+      "name": "ide",
+      "email": "ide+npm@jameside.com"
+    },
+    {
+      "name": "react-native-bot",
+      "email": "opensource+react-native-bot@fb.com"
+    },
+    {
+      "name": "spicyj",
+      "email": "ben@benalpert.com"
+    }
+  ],
+  "name": "react-native",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "16.0.0-alpha.6"
+  },
+  "publish_time": 1496743556199,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/facebook/react-native.git"
+  },
+  "scripts": {
+    "flow": "flow",
+    "lint": "eslint Examples/ Libraries/",
+    "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --",
+    "test": "jest",
+    "test-android-all": "npm run test-android-build && npm run test-android-run-unit && npm run test-android-run-instrumentation && npm run test-android-run-e2e",
+    "test-android-build": "docker build -t react/android -f ContainerShip/Dockerfile.android .",
+    "test-android-e2e": "npm run test-android-build && npm run test-android-run-e2e",
+    "test-android-instrumentation": "npm run test-android-build && npm run test-android-run-instrumentation",
+    "test-android-run-e2e": "docker run -it react/android bash ContainerShip/scripts/run-ci-e2e-tests.sh --android --js",
+    "test-android-run-instrumentation": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-instrumentation-tests.sh",
+    "test-android-run-unit": "docker run --cap-add=SYS_ADMIN -it react/android bash ContainerShip/scripts/run-android-docker-unit-tests.sh",
+    "test-android-setup": "docker pull containership/android-base:latest",
+    "test-android-unit": "npm run test-android-build && npm run test-android-run-unit"
+  },
+  "version": "0.44.3"
 }
