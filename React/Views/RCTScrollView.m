@@ -339,6 +339,11 @@ static inline BOOL isRectInvalid(CGRect rect) {
     _scrollView.delaysContentTouches = NO;
     _automaticallyAdjustContentInsets = YES;
     _contentInset = UIEdgeInsetsZero;
+    #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 110000 /* __IPHONE_11_0 */
+      if ([_scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+        _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+      }
+    #endif
     _contentSize = CGSizeZero;
     _lastClippedToRect = CGRectNull;
 
